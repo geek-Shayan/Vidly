@@ -8,13 +8,16 @@ const Input = ({ name, label, error, ...rest }) => {
                 {...rest}
                 id={name} 
                 name={name} 
-                className="form-control" 
+                className="form-control my-2" 
                 // autoFocus 
             />
             {error && <div className="alert alert-danger">{error}</div>}
         </div>
     );
 }
+
+export default Input;
+
 
 // const Input = ({ name, label, value, type, error, onChange }) => {
 //     return (  
@@ -34,4 +37,4 @@ const Input = ({ name, label, error, ...rest }) => {
 //     );
 // }
  
-export default Input;
+// export default Input;

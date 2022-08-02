@@ -140,7 +140,7 @@ class LoginForm extends Form {
                         name="username" 
                         label="Username"
                         value={data.username}
-                        onchange={this.handleChange}
+                        onChange={this.handleChange}
                         error={errors.username}
                     /> */}
                     
@@ -164,7 +164,7 @@ class LoginForm extends Form {
                         name="password" 
                         label="Password"
                         value={data.password}
-                        onchange={this.handleChange}
+                        onChange={this.handleChange}
                         error={errors.password}
                     /> */}
 
