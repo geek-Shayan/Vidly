@@ -6,6 +6,8 @@ import MoviesTable from './moviesTable';
 import { getMovies } from "../services/fakeMovieService";
 import { getGenres } from '../services/fakeGenreService';
 import { paginate } from '../utils/paginate';
+import { Route, Link } from 'react-router-dom';
+import MovieForm from './movieForm';
 import _ from 'lodash';
 
 class Movies extends Component {
@@ -99,6 +101,8 @@ class Movies extends Component {
             // // const movies = paginate(filteredMovies, currentPage, pageSize);
             // const movies = paginate(sortedMovies, currentPage, pageSize);
 
+            const { history }= this.props;
+
             return (
                 <div className='row'>
                     <div className="col-3">
@@ -112,6 +116,11 @@ class Movies extends Component {
                     </div>
 
                     <div className="col">
+                        <Link to={"/movies/new"}>
+                            <button className='btn btn-primary' >New Movie</button> 
+                            {/* onClick={() => history.push("/movies/new")} */}
+                        </Link>
+                        
                         {/* <p><b>There are {count} movies.</b></p> */}
                         {/* <p><b>There are {filteredMovies.length} movies.</b></p> */}
                         <p><b>There are {totalCount} movies.</b></p>
