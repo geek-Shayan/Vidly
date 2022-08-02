@@ -1,6 +1,6 @@
-import { Component } from 'react';
+// import { Component } from 'react';
 import { Route,Switch, Redirect } from 'react-router-dom';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Movies from './components/movies';
 import Customers from './components/customers';
 import Rentals from './components/rentals';
@@ -18,7 +18,7 @@ function App() {
             <NavBar/>
             <div className="App" >
                 {/* <img npm src={logo} className="App-logo" alt="logo" /> */}
-                <span><h1>Hello Movie World</h1></span>
+                <span><h1>Hello Movie World</h1>by vid.ly v1.0</span>
             </div>
 
             <main className='container'>

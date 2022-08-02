@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+import React from 'react';
 import Joi from 'joi-browser';
 import Form from './common/form';
-import { cond, max } from 'lodash';
 import { getGenres } from '../services/fakeGenreService';
 import { getMovie, saveMovie } from '../services/fakeMovieService';
 

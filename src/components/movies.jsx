@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import ListGroup from './common/listGroup';
 import Pagination from './common/pagination';
 import MoviesTable from './moviesTable';
-import MovieForm from './movieForm';
+// import MovieForm from './movieForm';
 import SearchBox from './common/searchBox';
 import { getMovies } from "../services/fakeMovieService";
 import { getGenres } from '../services/fakeGenreService';
 import { paginate } from '../utils/paginate';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import _ from 'lodash';
 
 
